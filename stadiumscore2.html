@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Pat and Mat | Baseball score analysis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome" />
+    <meta name="title" content="패트와 매트 | 야구 스코어 분석"/>
+    <meta name="keywords" content="KBO, 한국야구위원회, 프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta name="viewport" content="width=1200" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="패트와매트 | 야구 스코어 분석"/>
+    <meta property="og:description" content="KBO,프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta property="og:image" content="https://ifh.cc/g/c8KrSb.png"/>
+    <meta property="og:url" content="https://yooinging.github.io/patandmat/baseballsite.html"/>
+    <link rel="icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="shortcut icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="stylesheet" href="baseballsite.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.css">
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script src="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.js"></script>
+    <style>
+    @font-face {font-family : "Na";
+      src : url("NanumBarunGothic.ttf");}
+    div{font-family: "Na", sans-serif;}
+    h1{font-family: "Na", sans-serif;}
+    .content {font-family: "Na", sans-serif;}
+    .sub header {font-family: "Na", sans-serif;}
+    a, i, h1, div {text-decoration:none;
+      color:black;}
+    #menu {line-height : 1.5em;}
+    .li {
+       font-size: 2px;
+     }
+     ul {
+       padding-left : 0;
+     }
+     ul {list-style-type: none;}
+     ol {list-style-type: none;}
+     #gocheok {margin-left: 10%;margin-right: 10%}
+      #gwangju {margin-left: 10%;margin-right: 10%}
+       #daegu {margin-left: 10%;margin-right: 10%}
+        #daejeon {margin-left: 10%;margin-right: 10%}
+         #munhak {margin-left: 10%;margin-right: 10%}
+          #mokdong {margin-left: 10%;margin-right: 10%}
+           #sajik {margin-left: 10%;margin-right: 10%}
+            #suwon {margin-left: 10%;margin-right: 10%}
+             #jamsil {margin-left: 10%;margin-right: 10%}
+              #changwon {margin-left: 10%;margin-right: 10%}
+              video { max-width: 80%; display: block; margin: 20px auto; }
+  </style>
+  </head>
+
+  <body>
+    <h4 class = "ui header"></h4>
+      <h1 class="ui center header"><a href = "int.html">
+        <i class="baseball ball icon"></i>
+          <div class="content">
+            Pat and Mat | KBO Analysis<br>
+            <div class="sub header">야구를 보며 한 번 쯤은 궁금해했을 법한 그것</div>
+          </div>
+      </a></h1>
+  <div id = "contents">
+    <div class="ui secondary vertical pointing menu">
+      <a class="item" href="int.html">
+        Introduction
+      </a>
+      <a class="item" href="team.html">
+        Team Analysis
+      </a>
+      <a class="active item" href="stadiumscore.html">
+        Stadium to Score
+      </a>
+      <a class="item" href="scorestadium.html">
+        Score to Stadium
+      </a>
+      <a class="item" href="scoreteam.html">
+        Team to Score
+      </a>
+    </div>
+    <div id= "article">
+      <p><h3>How to</h3>
+        <div>구장 이름(ex. 고척, 광주)을 입력하면 해당 구장에서 가장 많이 기록된 최종 스코어와 최근 경기를 알려줍니다. </div>
+        <p><video controls muted poster="PATMAT.png" preload="auto">
+          <source src="컴퓨팅 1.mp4" type="video/mp4">
+        </video></p>
+      
+        <p>
+        <h3>Index</h3>
+        <ul id = "menu">
+          <li><a href = "#gocheok">고척스카이돔</a></li>
+          <li><a href = "#gwangju">광주-기아 챔피언스필드</a></li>
+          <li><a href = "#daegu">대구 삼성 라이온즈 파크</a></li>
+          <li><a href = "#daejeon">대전 한화생명 이글스 파크</a></li>
+          <li><a href = "#mokdong">목동야구장</a></li>
+          <li><a href = "#munhak">인천SK행복드림구장</a></li>
+          <li><a href = "#sajik">사직야구장</a></li>
+          <li><a href = "#suwon">수원 케이티 위즈 파크</a></li>
+          <li><a href = "#jamsil">서울종합운동장 잠실야구장</a></li>
+          <li><a href = "#changwon">창원 NC파크</a></li>
+        </ul>
+      </p><br>
+      <p>
+        <h3>Analysis</h3>
+        <br>
+        <img src = "Stadium to Score_고척.png" width="600" height="450" id = "gocheok"><br><br>
+         <p class = "nn">2016년 개장 이후 고척스카이돔에서 가장 많이 기록된 스코어는 <strong>2:3</strong>이며, 총 14번 기록되었습니다.<br><br>
+        가장 최근 2:3을 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=706907&gameId=20200830SSWO02020&listType=game&date=20200830" target = "_blank" title = "20200820 삼성-키움전 하이라이트">2020년 8월 30일(일) 삼성-키움전</a>입니다. 각 팀은 라이블리(삼성), 브리검(키움)을 선발투수로 내세웠으며, 승리투수는 브리검(7이닝 8피안타 2실점 2자책), 패전투수는 라이블리(4.2이닝 10피안타 3실점 3자책)였습니다.<br>
+        총 21개의 안타(삼성 10, 키움 11, 홈런 0)가 기록되었으며, 선발 출장한 키움 히어로즈 포수 이지영이 5회 말 2사 만루에서 우전 적시타를 기록하여 결승타의 주인공이 되었습니다. </p>
+        <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_광주.png" width="600" height="450" id = "gwangju"><br><br>
+         <p class = 'nn'>지난 10년 간 무등야구장, 광주-기아 챔피언스 필드에서 가장 많이 기록된 스코어는 <strong>2:3</strong>이며, 총 21번 기록되었습니다.<br><br>
+        가장 최근 2:3을 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=710780&gameId=20200908LGHT02020&listType=game&date=20200908" target = "_blank" title = "20200908 LG-기아전 하이라이트">2020년 9월 8일(화) LG-기아전</a>입니다. 각 팀은 정찬헌(LG), 양승철(기아)을 선발투수로 내세웠으며, 승리투수는 홍상삼(기아, 0.2이닝 3사사구 1삼진 무실점), 패전투수는 진해수(LG, 0.2이닝 2피안타 1사사구 1삼진 2실점 0자책)였습니다.<br>
+        총 18개의 안타(LG 11, 기아 7, 홈런 0)가 기록되었으며, 선발 출장한 기아 타이거즈 우익수 프레스턴 터커가 7회 말 2사 1,3루에서 우중간 2루타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_대구.png" width="600" height="450" id = "daegu"><br><br>
+         <p class = 'nn'>지난 10년 간 대구시민운동장 야구장, 대구 삼성 라이온즈 파크에서 가장 많이 기록된 스코어는 <strong>4:5</strong>이며, 총 18번 기록되었습니다.<br><br>
+        가장 최근 4:5를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=666003&gameId=20200529NCSS02020&listType=game&date=20200529" target = "_blank" title = "20200529 NC-삼성전 하이라이트">2020년 5월 29일(금) NC-삼성전</a>입니다. 각 팀은 루친스키(NC), 김대우(삼성)를 선발투수로 내세웠으며, 승리투수는 우규민(삼성, 1이닝 1삼진 무실점), 패전투수는 원종현(NC, 0.2이닝 3피안타 2실점 2자책)이었습니다.<br>
+        총 17개의 안타(NC 8, 삼성 9, 홈런 1(NC))가 기록되었으며, 선발 출장한 삼성 라이온즈 중견수 박승규가 9회 말 2사 3루에서 좌중간 적시타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_대전.png" width="600" height="450" id = "daejeon"><br><br>
+         <p class = 'nn'>지난 10년 간 대전 한화생명 이글스 파크에서 가장 많이 기록된 스코어는 <strong>3:4</strong>이며, 총 17번 기록되었습니다.<br><br>
+        가장 최근 3:4를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=734489&gameId=20201030KTHH02020&listType=game&date=20201030" target = "_blank" title = "20201030 KT-한화전 하이라이트">2020년 10월 30일(금) KT-한화전</a>입니다. 각 팀은 배제성(KT), 김범수(한화)를 선발투수로 내세웠으며, 승리투수는 강재민(한화, 1이닝 1피안타 2삼진 무실점), 패전투수는 배제성(KT, 4이닝 1피안타 2사사구 6삼진 2실점 1자책)이었습니다.<br>
+        총 16개의 안타(KT 10, 한화 6, 홈런 0)가 기록되었으며, 선발 출장한 한화 이글스 중견수 노수광이 5회 말 1사 3루에서 우중간 2루타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_목동.png" width="600" height="450" id = "mokdong"><br><br>
+         <p class = 'nn'>지난 5년 간 목동야구장에서 가장 많이 기록된 스코어는 <strong>3:4</strong>이며, 총 17번 기록되었습니다.<br><br>
+        가장 최근 3:4를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=155688&gameId=20151001HHWO0&listType=game&date=20151001" target = "_blank" title = "20151001 한화-넥센전 하이라이트">2015년 10월 1일(목) 한화-넥센(현 키움)전</a>입니다. 각 팀은 탈보트(한화), 밴헤켄(넥센)을 선발투수로 내세웠으며, 승리투수는 밴헤켄(넥센, 5.1이닝 7피안타 2사사구 10삼진 1실점 1자책), 패전투수는 탈보트(한화, 6이닝 6피안타 3사사구 8삼진 4실점 2자책)였습니다.<br>
+        총 17개의 안타(한화 11, 넥센 6, 홈런 0)가 기록되었으며, 선발 출장한 넥센 히어로즈 중견수 이택근이 1회 말 무사 1,3루에서 유격수 땅볼을 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_문학.png" width="600" height="450" id = "munhak"><br><br>
+         <p class = 'nn'>지난 10년 간 인천SK행복드림구장에서 가장 많이 기록된 스코어는 <strong>3:4</strong>이며, 총 28번 기록되었습니다.<br><br>
+        가장 최근 3:4를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=687290&gameId=20200719WOSK02020&listType=game&date=20200719" target = "_blank" title = "20200719 키움-SK전 하이라이트">2020년 7월 19일(일) 키움-SK전</a>입니다. 각 팀은 브리검(키움), 문승원(SK)을 선발투수로 내세웠으며, 승리투수는 서진용(SK, 0.2이닝 2사사구 무실점), 패전투수는 안우진(키움, 0.2이닝 1피안타 3사사구 2삼진 4실점 4자책)이었습니다.<br>
+        총 13개의 안타(키움 7, SK 6, 홈런 1(키움))가 기록되었으며, 선발 출장한 SK 와이번스 유격수 김성현이 9외 말 2사 1, 3루에서 좌전 적시타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_사직.png" width="600" height="450" id = "sajik"><br><br>
+         <p class = 'nn'>지난 10년 간 사직야구장에서 가장 많이 기록된 스코어는 <strong>3:4</strong>이며, 총 24번 기록되었습니다.<br><br>
+        가장 최근 3:4를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=675182&gameId=20200623HTLT02020&listType=game&date=20200623" target = "_blank" title = "20200623 기아-롯데전 하이라이트">2020년 6월 23일(화) 기아-롯데전</a>입니다. 각 팀은 브룩스(기아), 서준원(롯데)을 선발투수로 내세웠으며, 승리투수는 오현택(롯데, 1이닝 2피안타 1삼진 무실점), 패전투수는 문경찬(기아, 0.1이닝 4피안타 1사사구 3실점 3자책)이었습니다.<br>
+        총 19개의 안타(기아 11, 롯데 8, 홈런 1(기아))가 기록되었으며, 교체 투입된 롯데 자이언츠 포수 김준태가 9회 말 1사 만루에서 우전 적9타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_수원.png" width="600" height="450" id = "suwon"><br><br>
+         <p class = 'nn'>지난 6년 간 수원 케이티 위즈 파크에서 가장 많이 기록된 스코어는 <strong>2:3</strong>이며, 총 15번 기록되었습니다.<br><br>
+        가장 최근 2:3을 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=679826&gameId=20200703WOKT02020&listType=game&date=20200703" target = "_blank" title = "20200703 키움-KT전 하이라이트">2020년 7월 3일(금) 키움-KT전</a>입니다. 각 팀은 요키시(키움), 데스파이네(KT)를 선발투수로 내세웠으며, 승리투수는 주권(KT, 1이닝 무실점), 패전투수는 조상우(키움, 1이닝 2피안타 1삼진 1실점 1자책)였습니다.<br>
+        총 17개의 안타(키움 6, KT 11, 홈런 1(키움))가 기록되었으며, 선발 출장한 KT 위즈 3루수 황재균이 9회 말 2사 2루에서 중전 적시타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_잠실.png" width="600" height="450" id = "jamsil"><br><br>
+         <p class = 'nn'>지난 10년 간 서울종합운동장 야구장에서 가장 많이 기록된 스코어는 <strong>3:4</strong>이며, 총 55번 기록되었습니다.<br><br>
+        가장 최근 3:4를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=735504&gameId=44441102WOLG02020&listType=game&date=20201102" target = "_blank" title = "20201102 키움-LG전 하이라이트">2020년 11월 2일(월) 키움-LG 와일드카드 결정전</a>입니다. 각 팀은 브리검(키움), 켈리(LG)를 선발투수로 내세웠으며, 승리투수는 임찬규(LG, 1이닝 3피안타 1실점 1자책), 패전투수는 김상수(키움, 0.1이닝 2피안타 2실점 2자책)였습니다.<br>
+        총 17개의 안타(키움 7, LG 10, 홈런 2(키움 1, LG 1))가 기록되었으며, 대주자로 교체 투입된 내야수 신민재가 13회 말 2사 만루에서 우중간 적시타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+
+        <img src = "Stadium to Score_창원.png" width="600" height="450" id = "changwon"><br><br>
+         <p class = 'nn'>지난 8년 간 마산종합운동장 야구장, 창원 NC파크에서 가장 많이 기록된 스코어는 <strong>8:2</strong>와 <strong>1:2</strong>이며, 총 5번 기록되었습니다.<br><br>
+        가장 최근 8:2를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=722081&gameId=20201002SSNC02020&listType=game&date=20201002" target = "_blank" title = "20201002 삼성-NC전 하이라이트">2020년 10월 2일(금) 삼성-NC전</a>입니다. 각 팀은 최채흥(삼성), 라이트(NC)를 선발투수로 내세웠으며, 승리투수는 최채흥(삼성, 6이닝 2피안타 3사사구 7삼진 1실점 1자책), 패전투수는 라이트(NC, 6이닝 8피안타 4삼진 4실점 4자책)였습니다.<br>
+        총 17개의 안타(삼성 13, NC 4, 홈런 1(NC))가 기록되었으며, 선발 출장한 삼성 라이온즈 우익수 구자욱이 6회 초 1사 만루에서 우익수 쪽 2루타를 기록하여 결승타의 주인공이 되었습니다. </p>
+        <p class = 'nn'>가장 최근 1:2를 기록한 경기는 <a href = "https://sports.news.naver.com/kbaseball/vod/index.nhn?category=kbo&id=656433&gameId=66660425HTNC02020&listType=game&date=20200425" target = "_blank" title = "20200425 기아-NC전 하이라이트">2020년 4월 25일(토) 기아-NC전</a>입니다. 각 팀은 양현종(기아), 라이트(NC)를 선발투수로 내세웠으며, 승리투수는 김건태(NC, 1.1이닝 1피안타 무실점), 패전투수는 하준영(기아, 0.1이닝 1피안타 1사사구 1실점 1자책)이었습니다.<br>
+        총 10개의 안타(기아 6, NC 4, 홈런 1(NC))가 기록되었으며, 선발 출장한 NC 다이노스 우익수 김성욱이 7회 말 1사 1,3루에서 유격수 쪽 안타를 기록하여 결승타의 주인공이 되었습니다. </p>
+          <p class = "li"><a href = "#menu">[목록으로]</a></p><br>
+      </p>
+
+
+    </div>
+  </div>
+  </body>
+</html>

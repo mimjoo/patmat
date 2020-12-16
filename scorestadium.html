@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Pat and Mat | Baseball score analysis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome" />
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    <meta name="title" content="패트와 매트 | 야구 스코어 분석"/>
+    <meta name="keywords" content="KBO, 한국야구위원회, 프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta name="viewport" content="width=1200" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="패트와매트 | 야구 스코어 분석"/>
+    <meta property="og:description" content="KBO,프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta property="og:image" content="https://ifh.cc/g/c8KrSb.png"/>
+    <meta property="og:url" content="https://yooinging.github.io/patandmat/baseballsite.html"/>
+    <link rel="icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="shortcut icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="stylesheet" href="baseballsite.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.css">
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script src="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.js"></script>
+      <style>
+        @font-face {font-family : "Na";
+          src : url("NanumBarunGothic.ttf");}
+        div {font-family: "Na", sans-serif;}
+        h1 {font-family: "Na", sans-serif;}
+        .content {font-family: "Na", sans-serif;}
+        .sub header {font-family: "Na", sans-serif;}
+        a, i, h1, div {text-decoration:none;
+          color:black;}
+        ol {list-style-type: none;}
+        mark{background-color : #E7AE27;}
+        video { max-width: 80%; display: block; margin: 20px auto; }
+      </style>
+    </head>
+
+    <body>
+      <h4 class = "ui header"></h4>
+      <h1 class="ui center header"><a href = "int.html">
+        <i class="baseball ball icon"></i>
+          <div class="content">
+            Pat and Mat | KBO Analysis<br>
+            <div class="sub header">야구를 보며 한 번 쯤은 궁금해했을 법한 그것</div>
+          </div>
+      </a></h1>
+      <div id = "contents">
+        <div class="ui secondary vertical pointing menu">
+          <a class="item" href="int.html">
+            Introduction
+          </a>
+          <a class="item" href="team.html">
+            Team Introduction
+          </a>
+          <a class="item" href="stadiumscore.html">
+            Stadium to Score
+          </a>
+          <a class="active item" href="scorestadium.html">
+            Score to Stadium
+          </a>
+          <a class="item" href="scoreteam.html">
+            Team to Score
+          </a>
+        </div>
+        <div id= "article">
+          <p>
+            <h3>How to</h3>
+            <div class = "nn">최종 스코어를 입력하면 해당 스코어가 가장 많이 기록된 구장이 나옵니다.</div><br>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/m8iTRLG2NlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          </p>
+          <p>
+            <h3>Analysis</h3>
+          <div class = "nn">
+              <table class="ui celled padded table">
+                <thead>
+                    <tr><th class="single line">최종 스코어</th>
+                    <th>구장</th>
+                    <th>횟수</th>
+                  </tr></thead>
+                    <tbody>
+                      <div id = "1">
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:0</h4>
+                        </td>
+                        <td class="single line">
+                        사직야구장
+                        </td>
+                        <td class = "single line">
+                        2
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:1</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          18
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:2</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          16
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:3</h4>
+                        </td>
+                        <td class="single line">
+                         인천SK행복드림구장
+                        </td>
+                        <td class = "single line">
+                          11
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:4</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          17
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:5</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          12
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:6</h4>
+                        </td>
+                        <td class="single line">
+                        사직야구장
+                        </td>
+                        <td class = "single line">
+                          8
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:7</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          6
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:8</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          7
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:9</h4>
+                        </td>
+                        <td class="single line">
+                          서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          8
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:10</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          4
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:11</h4>
+                        </td>
+                        <td class="single line">
+                         서울종합운동장 야구장
+                        </td>
+                        <td class = "single line">
+                          4
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:12</h4>
+                        </td>
+                        <td class="single line">
+                         대전 한화생명 이글스 파크, 목동야구장, <br>인천SK행복드림구장, 대구 삼성 라이온즈 파크
+                        </td>
+                        <td class = "single line">
+                          1
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4 class="ui center aligned header">0:13</h4>
+                        </td>
+                        <td class="single line">
+                        서울종합운동장 야구장, 대구 삼성 라이온즈 파크
+                        </td>
+                        <td class = "single line">
+                          2
+                        </td>
+                      </tr>
+                          <tr>
+                            <td>
+                              <h4 class="ui center aligned header">0:14</h4>
+                            </td>
+                            <td class="single line">
+                            대전 한화생명 이글스 파크
+                            </td>
+                            <td class = "single line">
+                              1
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h4 class="ui center aligned header">0:17</h4>
+                            </td>
+                            <td class="single line">
+                            광주-기아 챔피언스필드
+                            </td>
+                            <td class = "single line">
+                              1
+                            </td>
+                          </tr>
+                          </div>
+
+                    </tbody>
+                    <tfoot>
+                      <tr><th colspan="5">
+                        <div class="ui right floated pagination menu">
+                          <a class="icon item">
+                            <i class="left chevron icon"></i>
+                          </a>
+                          <a class="item">1</a>
+                          <a class="item">2</a>
+                          <a class="item">3</a>
+                          <a class="icon item">
+                            <i class="right chevron icon"></i>
+                          </a>
+                        </div>
+                      </th>
+                    </tr></tfoot>
+                  </table>
+                  <p>
+                    <h3>How to</h3>
+                    <div class = "nn">스코어를 입력하면 해당 스코어 차이 승부를 펼친 두 팀이 나옵니다.</div><br>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3hMBIvzcHPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            </div>
+
+          </div>
+          </p>
+        </div>
+      <script>
+      $('.ui.embed').embed();
+      $('.ui.accordion').accordion();
+      </script>
+
+  </body>
+</html>

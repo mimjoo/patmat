@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Pat and Mat | Baseball score analysis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome" />
+    <meta name="title" content="패트와 매트 | 야구 스코어 분석"/>
+    <meta name="keywords" content="KBO, 한국야구위원회, 프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta name="viewport" content="width=1200" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="패트와매트 | 야구 스코어 분석"/>
+    <meta property="og:description" content="KBO,프로야구, KBO 리그, 팀별 최다스코어, 경기장별 기록" />
+    <meta property="og:image" content="https://ifh.cc/g/c8KrSb.png"/>
+    <meta property="og:url" content="https://yooinging.github.io/patandmat/baseballsite.html"/>
+    <link rel="icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="shortcut icon" href="patmatrep_StP_icon.ico"/>
+    <link rel="stylesheet" href="baseballsite.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.css">
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script src="Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.js"></script>
+      <style>
+        @font-face {font-family : "min";
+          src : url("KoPubDotumBold.ttf");}
+        @font-face {font-family : "Na";
+          src : url("NanumBarunGothic.ttf");}
+        div {font-family: "Na", sans-serif;}
+        h1, option {font-family: "Na", sans-serif;}
+        .content {font-family: "min", sans-serif;}
+        .sub header {font-family: "Na", sans-serif;}
+        a, i, h1, div {text-decoration:none;
+          color:black;}
+        ol {list-style-type: none;}
+        mark{background-color : #E7AE27;}
+        video { max-width: 80%; display: block; margin: 20px auto; }
+      </style>
+    </head>
+  
+    <body>
+      <h4 class = "ui header"></h4>
+      <h1 class="ui center header"><a href = "int.html">
+        <i class="baseball ball icon"></i>
+          <div class="content">
+            Pat and Mat | KBO Analysis<br>
+            <div class="sub header">야구를 보며 한 번 쯤은 궁금해했을 법한 그것</div>
+          </div>
+      </a></h1>
+      <div id = "contents">
+        <div class="ui secondary vertical pointing menu">
+          <a class="item" href="int.html">
+            Introduction
+          </a>
+          <a class="item" href="team.html">
+            Team Introduction
+          </a>
+          <a class="item" href="stadiumscore.html">
+            Stadium to Score
+          </a>
+          <a class="item" href="scorestadium.html">
+            Score to Stadium
+          </a>
+          <a class="active item" href="scoreteam.html">
+            Team to Score
+          </a>
+        </div>
+        <div id= "article">
+          <p>
+            <h3>How to</h3>
+            <div class = "nn">팀을 입력하면 해당 팀이 원정 경기와 홈 경기에서 가장 많이 기록한 스코어와 승률이 나옵니다.</div><br>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3hMBIvzcHPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            
+          </p>
+          <p>
+            <h3>Analysis</h3>
+            <img src = "시트 1.png" width="100%" height="450"></p>
+           
+            <div class="ui accordion">
+              <div class="title">
+                <i class="dropdown icon"></i>
+                두산 베어스
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="두산">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>93회</td>
+                        <td>5점</td>
+                        <td>101회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>90회</td>
+                        <td>4점</td>
+                        <td>98회</td>
+                      </tr>
+                      <tr>
+                        <td>6점</td>
+                        <td>87회</td>
+                        <td>3점</td>
+                        <td>86회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>두산 베어스는 지난 10년 간 원정 경기에서 3점(93회)을, 홈 경기에서 5점(101회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기 승률은 0.387, 득점 5점의 홈 경기 승률은 0.574입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                한화 이글스
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="한화">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2점</td>
+                        <td>107회</td>
+                        <td>4점</td>
+                        <td>122회</td>
+                      </tr>
+                      <tr>
+                        <td>3점</td>
+                        <td>103회</td>
+                        <td>2점</td>
+                        <td>105회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>87회</td>
+                        <td>3점</td>
+                        <td>90회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>한화 이글스는 지난 10년 간 원정 경기에서 2점(107회)을, 홈 경기에서 4점(122회)을 가장 많이 얻었습니다.
+                    <br>득점 2점의 원정 경기 승률은 0.159, 득점 4점의 홈 경기 승률은 0.369입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                KIA 타이거즈
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="KIA">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>117회</td>
+                        <td>4점</td>
+                        <td>96회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>98회</td>
+                        <td>3점</td>
+                        <td>90회</td>
+                      </tr>
+                      <tr>
+                        <td>2점</td>
+                        <td>91회</td>
+                        <td>2점</td>
+                        <td>86회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>KIA 타이거즈는 지난 10년 간 원정 경기에서 3점(117회)을, 홈 경기에서 4점(96회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기의 승률은 0.205, 득점 4점의 홈 경기의 승률은 0.458입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                키움 히어로즈
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="키움">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>117회</td>
+                        <td>4점</td>
+                        <td>96회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>81회</td>
+                        <td>3점</td>
+                        <td>93회</td>
+                      </tr>
+                      <tr>
+                        <td>1점</td>
+                        <td>75회</td>
+                        <td>5점</td>
+                        <td>90회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>키움 히어로즈는 지난 10년 간 원정 경기에서 3점(117회)을, 홈 경기에서 4점(96회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기 승률은 0.274, 득점 4점의 홈 경기 승률은 0.521입니다.
+                    </p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                KT 위즈
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="KT">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>64회</td>
+                        <td>2점</td>
+                        <td>68회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>58회</td>
+                        <td>3점</td>
+                        <td>58회</td>
+                      </tr>
+                      <tr>
+                        <td>2점</td>
+                        <td>54회</td>
+                        <td>4점</td>
+                        <td>55회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>KT 위즈는 지난 6년 간 원정 경기에서 3점(64회)을, 홈 경기에서 2점(68회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기 승률은 0.203, 득점 2점의 홈 경기 승률은 0.162입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                LG 트윈스
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="LG">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>107회</td>
+                        <td>3점</td>
+                        <td>113회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>104회</td>
+                        <td>2점</td>
+                        <td>99회</td>
+                      </tr>
+                      <tr>
+                        <td>2점</td>
+                        <td>94회</td>
+                        <td>4점</td>
+                        <td>93회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>LG 트윈스는 원정 경기에서 3점(107회)을, 홈 경기에서 3점(113회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기 승률은 0.28, 득점 3점의 홈 경기 승률은 0.354입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                롯데 자이언츠
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="롯데">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2점</td>
+                        <td>99회</td>
+                        <td>4점</td>
+                        <td>96회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>92회</td>
+                        <td>5점</td>
+                        <td>92회</td>
+                      </tr>
+                      <tr>
+                        <td>1점</td>
+                        <td>87회</td>
+                        <td>3점</td>
+                        <td>83회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>롯데 자이언츠는 지난 10년 간 원정 경기에서 2점(99회)을, 홈 경기에서 4점(96회)을 가장 많이 얻었습니다.
+                    <br>득점 2점의 원정 경기 승률은 0.152, 득점 4점의 홈 경기 승률은 0.573입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                NC 다이노스
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="NC">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3점</td>
+                        <td>72회</td>
+                        <td>4점</td>
+                        <td>97회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>72회</td>
+                        <td>2점</td>
+                        <td>81회</td>
+                      </tr>
+                      <tr>
+                        <td>5점</td>
+                        <td>64회</td>
+                        <td>3점</td>
+                        <td>71회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>NC 다이노스는 지난 8년 간 원정 경기에서 3점(72회)을, 홈 경기에서 4점(97회)을 가장 많이 얻었습니다.
+                    <br>득점 3점의 원정 경기 승률은 0.264, 득점 4점의 홈 경기 승률은 0.515입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                삼성 라이온즈
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="삼성">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2점</td>
+                        <td>95회</td>
+                        <td>3점</td>
+                        <td>100회</td>
+                      </tr>
+                      <tr>
+                        <td>3점</td>
+                        <td>88회</td>
+                        <td>4점</td>
+                        <td>93회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>86회</td>
+                        <td>5점</td>
+                        <td>85회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>삼성 라이온즈는 지난 10년 간 원정 경기에서 2점(95회)을, 홈 경기에서 3점(100회)을 가장 많이 얻었습니다.
+                    <br>득점 2점의 원정 경기 승률은 0.189, 득점 3점의 홈 경기 승률은 0.3입니다.</p>
+                </p>
+              </div>
+
+              <div class="title">
+                <i class="dropdown icon"></i>
+                SK 와이번즈
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <table class="ui celled fixed table" id="SK">
+                    <thead>
+                      <tr class="ui center aligned">
+                        <th>원정 최빈 득점</th>
+                        <th>횟수</th>
+                        <th>홈 최빈 득점</th>
+                        <th>횟수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2점</td>
+                        <td>106회</td>
+                        <td>4점</td>
+                        <td>119회</td>
+                      </tr>
+                      <tr>
+                        <td>4점</td>
+                        <td>98회</td>
+                        <td>2점</td>
+                        <td>94회</td>
+                      </tr>
+                      <tr>
+                        <td>3점</td>
+                        <td>95회</td>
+                        <td>3점</td>
+                        <td>82회</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>SK 와이번즈는 지난 10년 간 원정 경기에서 2점(106회)을, 홈 경기에서 4점(119회)을 가장 많이 얻었습니다.
+                    <br>득점 2점의 원정 경기 승률은 0.236, 득점 4점의 홈 경기 승률은 0.504입니다.</p>
+                 </p>
+               </div>
+
+               <div class="title">
+                <i class="dropdown icon"></i>
+                요약
+              </div>
+              <div class="content">
+                <p class="transition hidden">
+                  <div class="ui segment">
+                    <p>지난 10년 간 10개 구단은 <strong>원정경기에서 3점(6개 구단), 홈 경기에서 4점(6개 구단)</strong>을 가장 많이 얻었습니다.</p>
+                    <div class="ui fitted divider"></div>
+                    <p><br>각 팀이 기록한 득점의 상위 3개만을 추출하였기 때문에 표본이 작긴 하지만, 각 팀의 원정 평균 득점은 두산이 4.3점으로 가장 높으며 그 뒤를 NC(3.962점)가 바짝 뒤쫓고 있는 추세입니다. LG(3.033점), KIA와 KT(3.023점)는 3점 부근에 분포하고 있습니다.<br>
+                      홈 평균 득점 역시 두산이 4.053점으로 가장 높으나 롯데가 4.033점으로 원정 경기(2.349점)에 비해 홈에서 더 많은 득점을 기록했다는 점을 확인할 수 있습니다. 키움과 삼성은 3.9점 가량으로 상위권을 차지하고 있습니다.<br>
+                      </p><p>홈 구장을 사용하는 경기에서는 이닝 말에 공격 기회를 가지며 항상 연습하던 익숙한 경기장이고, 많은 홈팬들이 직관하러 오기 때문에 대체로 원정 경기보다 승률이 높습니다.
+                      하지만 해당 평균 득점 비교에서는 이 점이 명확히 드러나지 않는데, 그 원인이 표본이 작아 실제 평균 득점과 괴리가 있어서인지, 혹은 많은 득점이 반드시 승리를, 적은 득점이 반드시 패배를 의미하지 않기 때문인지는 확실하지 않습니다. 보다 세부적인 분석이 필요한 부분입니다. </p></p>
+                  </div>
+              </div>
+            </div>
+      <script>
+        $('.ui.embed').embed();
+        $('.ui.accordion').accordion();
+      </script>
+  </body>
+</html>
